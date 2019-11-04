@@ -52,6 +52,14 @@ public class Test {
 
         Creature cow = CreatureModule.MyClone("Cow");//测试不存在的情况
 
+        //测试迭代器模式
+        System.out.println("");
+        System.out.println("=====现在开始测试迭代器模式：=====");
+        IteratorPatternDemo.PrintProducts();
+        //测试空对象模式
+        System.out.println("");
+        System.out.println("=====现在开始测试空对象模式：=====");
+        NullPatternDemo.FindProducts(args);
 
         // 测试抽象工厂模式和享元模式
         System.out.println("");
