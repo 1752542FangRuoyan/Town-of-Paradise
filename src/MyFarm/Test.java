@@ -69,7 +69,20 @@ public class Test {
         Tool big_bowl = tool_factory.getTool("BigBowl");
         Tool small_bowl = tool_factory.getTool("SmallBowl");
 
+        //测试中介者模式
+        System.out.println("");
+        System.out.println("=====现在开始测试中介者模式=====");
+        Mediator mediator=new Mediator(animalMenu);
+        pig.showHunger();
+        Owner.getInstance().feedAll();
 
+        //测试外观模式
+        System.out.println("");
+        System.out.println("=====现在开始测试外观模式=====");
+        Facade facade=new Facade(plantMenu, animalMenu);
+        facade.newPig("Pig3");
+        facade.plantCrop("Crop3");
+        
         // 测试建造者模式
         System.out.println("");
         System.out.println("=====现在开始测试建造者模式和享元模式=====");
