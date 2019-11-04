@@ -1,6 +1,6 @@
 package MyFarm.animals;
 
-import MyFarm.Facade;
+import MyFarm.Mediator;
 import MyFarm.Farm;
 import MyFarm.animalState.FullState;
 import MyFarm.animalState.HungryState;
@@ -28,7 +28,7 @@ public abstract class BaseAnimal extends Creature {
 
     //吴
     public void showHunger(){
-        Facade.showHunger(getName());
+        Mediator.showHunger(getName());
     }
 
 
