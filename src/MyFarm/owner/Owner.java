@@ -2,6 +2,7 @@ package MyFarm.owner;
 
 import MyFarm.shopping.Customer;
 import MyFarm.shopping.ShoppingUtils;
+import MyFarm.Mediator;
 
 public class Owner implements MoneyGetter, ShoppingUtils {
     private double money;
@@ -57,5 +58,9 @@ public class Owner implements MoneyGetter, ShoppingUtils {
     @Override
     public void OutGood() {
        System.out.println("admin售出一只"+"给"+buyer.getName());
+    }
+    
+    public void feedAll(){
+        Mediator.feedAll();
     }
 }
