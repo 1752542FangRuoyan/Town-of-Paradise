@@ -37,8 +37,8 @@ public class Test {
 
         BaseAnimal animal = (BaseAnimal) CreatureModule.MyClone("Pig");
         animalMenu.addAnimal(animal);
-        pig.setName("Pig2");
-        System.out.println("新生成了" + pig.getName());
+        animal.setName("Pig2");
+        System.out.println("新生成了" + animal.getName());
 
         BasePlant plant = (BasePlant) CreatureModule.MyClone("Crop");
         plantMenu.addPlant(plant);
